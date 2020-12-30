@@ -38,9 +38,11 @@ Therefore, we will try to solve the problem by implementing a “face recognitio
 
 Recently, More the accuracy of deep learning based facial recognition technology, more the application examples of this tech in various fields such as crime, security, distribution and finance. <br>
 
-Among biometric recognition technologies, face recognition is expected to be the most useful in almost every fields due to its hygienic and high convenience because it does not contact recognition equipment.
+It does not require any physical contact to any equipment. <br>
 
-The global facial recognition market is growing at an annual average of 22%, so the outlook for growth is very positive.
+Among biometric recognition technologies, face recognition system is expected to be highly hygienic with a high convenience. <br>
+
+Also the global facial recognition market is growing at an annual average of 22%, so the outlook for growth is fairly positive.
 
 # 👨🏻‍🔬 개발 필요성 (Research Background)
 컴퓨터 비전과 딥러닝 기반의 무인화 상점 플랫폼 개발을 통해 기존에 대면으로 이루어지던 소비 패턴을 간편하고 빠른 자동화 시스템으로 대체.<br
