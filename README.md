@@ -62,6 +62,7 @@ DeepSort https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch <br>
 OpenPose https://github.com/CMU-Perceptual-Computing-Lab/openpose.git <br>
 Darknet https://github.com/pjreddie/darknet.git <br>
 LabelImg https://github.com/tzutalin/labelImg <br>
+MTCNN https://github.com/ipazc/mtcnn <br>
 FaceRecognition https://github.com/ageitgey/face_recognition <br>
 FaceNet https://github.com/timesler/facenet-pytorch <br>
 * <b>Official Papers</b> <br>
@@ -69,4 +70,7 @@ Yolov4 https://arxiv.org/pdf/2004.10934.pdf <br>
 Yolov5  -  On the way! <br>
 FaceRecognition https://arxiv.org/pdf/1804.06655.pdf <br>
 FaceNet https://arxiv.org/pdf/1503.03832.pdf <br>
-Face Augmentation https://arxiv.org/pdf/1904.11685.pdf
+Face Augmentation https://arxiv.org/pdf/1904.11685.pdf <br>
+Joint Face Detection and Alignment https://arxiv.org/pdf/1604.02878.pdf
+* <b>Pretrained Model</b> <br>
+https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk/edit
