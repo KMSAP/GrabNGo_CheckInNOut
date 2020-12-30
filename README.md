@@ -3,7 +3,7 @@ In February 2020, with the rapid spread of Covid-19, a new form of society calle
 So-called generation 2030 has shown unique consumption pattern.
 From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals.
 This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br>
-Untact stores that operate without people or cash are receiving more attention due to the impact of Covid-19. <br>
+In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br>
 According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.
 At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.
 Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.
