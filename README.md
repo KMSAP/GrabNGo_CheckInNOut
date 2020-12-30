@@ -6,6 +6,13 @@
 동시에 안전한 환경에서 직접 물건을 맨눈으로 직접 확인한 후에 구매하려는 소비자들의 수요 증가. <br>
 이에 무인 상점 시스템과 더불어 ‘얼굴 인식 기반 체크인/체크아웃 시스템’을 구현하여 문제 해결에 도전해보고자 함.  <br>
 
+In February 2020, with the rapid spread of Covid-19, a new change called ‘Contact-free society’, has covered the fields such as retail, distribution, and remote learning. <br>
+At the same time, as a result of the 2030 generation's tendency to not want to meet directly with employees and the demand for labor cost reduction of distributors, the untact consumption pattern has gradually expanded. <br>
+Untact stores that operate without people or cash are receiving more attention due to the impact of Corona 19.
+According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.
+At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.
+Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.
+
 # 🏃 산업 동향 (Industrial Trends)
 최근 인공지능 기술을 이용한 얼굴 인식의 정확도가 높아짐에 따라 범죄, 보안, 유통, 금융 등 다양한 분야에서 적용 사례 증가.<br>
 특히 생체인식 기술 중에서 얼굴 인식은 인식 장비와 접촉하지 않아 위생적이고 편의성이 높아 다양한 분야에서의 활용성이 기대됨.<br>
