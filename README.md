@@ -14,7 +14,7 @@
 
 * In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning.<br>
 
-* So-called generation 2030 has shown unique consumption pattern. <br>
+* So-called "generation 2030" has shown unique consumption pattern. <br>
 
 * From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br>
 
