@@ -26,7 +26,7 @@ According to data provided by NSO(National Statistical Office) in South Korea, a
 
 On the other hand, the demand for safe environment for those customers who would prefer to purchase products (especially fresh products or expensive goods) after checking them physically.<br> 
 
-Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.<br>
+Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the contactless store system.<br>
 
 
 # 🏃 산업 동향 (Industrial Trends)
@@ -44,7 +44,7 @@ Among biometric recognition technologies, face recognition system is expected to
 
 Also the global facial recognition market is growing at an annual average of 22%, so the outlook for growth is fairly positive.
 
-# 👨🏻‍🔬 개발 과제 (Research Background)
+# 👨🏻‍🔬 개발 과제 (Research aims)
 
 * 컴퓨터 비전과 딥러닝 기반의 무인화 상점 플랫폼 개발을 통해 기존에 대면으로 이루어지던 소비 패턴을 간편하고 빠른 비대면-자동화 시스템으로 대체.<br>
 
@@ -53,6 +53,14 @@ Also the global facial recognition market is growing at an annual average of 22%
 * 대면으로 실행되던 결제 단계 생략으로 사람 간의 접촉을 줄이고 시간 단축이 핵심.
 
 * 다양한 센서와 다량의 카메라를 사용하는 아마존고의 기술을 오직 카메라 한 대와 최신 컴퓨터 비전 알고리즘만으로 단기간 내 구현 및 최적화에 도전.<br>
+
+* Through the development of contactless store platform based on computer vision and deep learning, consumption patterns that were previously made face-to-face are replaced with simple and fast non-face-to-face automation systems.
+
+* Make it possible to check the products in the virtual shopping cart with the app in real time by automatically mapping the customer's payment method and information through linkage with the database.
+
+* By omitting the payment step that was performed face-to-face, it is essential to reduce contact between people and shorten time.
+
+* We challenge the implementation and optimization of Amazon Go's technology using various sensors and a large number of cameras in a short period of time with only one camera and the latest computer vision algorithms.
 
 # 📝 레퍼런스 (Reference)
 * <b> GitHub </b><br>
