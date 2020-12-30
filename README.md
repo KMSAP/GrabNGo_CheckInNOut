@@ -1,17 +1,16 @@
 # ❓ 문제 인식 (Problem Definition)
-2020년 2월, 코로나 19가 급격히 확산되면서 코로나 19 이후의 뉴노멀과 함께 ‘언택트 사회’ 라는 새로운 변화가 소매, 유통, 원격 학습 등의 분야로 빠르게 확산됨. <br>
-동시에 직원과 직접 마주치는 것을 원치 않는 2030 세대의 성향과 유통사의 인건비 절감 요구가 맞아떨어진 결과, 점차 확장되어온 언택트 소비 패턴. <br>
-사람 · 현금 없이 운영되는 언택트 매장이 코로나 19 영향으로 더욱 주목받고 있음. <br>
-코로나 19 여파로 집콕 수요가 늘어남에 따라 올해 3분기 온라인 쇼핑 거래액이 통계 이래 최고 금액 수준을 기록했다는 연구 결과. <br>
-동시에 안전한 환경에서 직접 물건을 맨눈으로 직접 확인한 후에 구매하려는 소비자들의 수요 증가. <br>
-이에 무인 상점 시스템과 더불어 ‘얼굴 인식 기반 체크인/체크아웃 시스템’을 구현하여 문제 해결에 도전해보고자 함.  <br>
-
 In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, and remote learning. <br>
 At the same time, as a result of the 2030 generation's tendency to not want to meet directly with employees and the demand for labor cost reduction of distributors, the untact consumption pattern has gradually expanded. <br>
 Untact stores that operate without people or cash are receiving more attention due to the impact of Covid-19. <br>
 According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.
 At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.
 Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.
+2020년 2월, 코로나 19가 급격히 확산되면서 코로나 19 이후의 뉴노멀과 함께 ‘언택트 사회’ 라는 새로운 변화가 소매, 유통, 원격 학습 등의 분야로 빠르게 확산됨. <br>
+동시에 직원과 직접 마주치는 것을 원치 않는 2030 세대의 소비 성향과 유통사의 인건비 절감 요구가 맞아떨어진 결과, 점차 확장되어온 언택트 소비 패턴. <br>
+사람 · 현금 없이 운영되는 언택트 매장이 코로나 19 영향으로 더욱 주목받고 있음. <br>
+코로나 19 여파로 집콕 수요가 늘어남에 따라 올해 3분기 온라인 쇼핑 거래액이 통계 이래 최고 금액 수준을 기록했다는 연구 결과. <br>
+동시에 안전한 환경에서 직접 물건을 맨눈으로 직접 확인한 후에 구매하려는 소비자들의 수요 증가. <br>
+이에 무인 상점 시스템과 더불어 ‘얼굴 인식 기반 체크인/체크아웃 시스템’을 구현하여 문제 해결에 도전해보고자 함.  <br>
 
 # 🏃 산업 동향 (Industrial Trends)
 최근 인공지능 기술을 이용한 얼굴 인식의 정확도가 높아짐에 따라 범죄, 보안, 유통, 금융 등 다양한 분야에서 적용 사례 증가.<br>
