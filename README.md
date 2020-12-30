@@ -54,7 +54,6 @@
 
 * 다양한 센서와 다량의 카메라를 사용하는 아마존고의 기술을 오직 카메라 한 대와 최신 컴퓨터 비전 알고리즘만으로 단기간 내 구현 및 최적화에 도전.<br><br>
 
-
 # 📝 레퍼런스 (Reference)
 * <b> GitHub </b><br>
 Yolov4 https://github.com/Tianxiaomo/pytorch-YOLOv4 <br>
