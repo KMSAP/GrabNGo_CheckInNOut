@@ -1,48 +1,48 @@
 # ❓ 문제 인식 (Problem Definition)
 
-2020년 2월, 코로나 19가 급격히 확산되면서 팬데믹 이후의 뉴노멀과 함께 ‘언택트 사회’ 라는 새로운 변화가 소매, 유통, 원격 학습 등의 분야로 빠르게 확산되었다. <br>
+* 2020년 2월, 코로나 19가 급격히 확산되면서 팬데믹 이후의 뉴노멀과 함께 ‘언택트 사회’ 라는 새로운 변화가 소매, 유통, 원격 학습 등의 분야로 빠르게 확산되었다. <br>
 
-동시에 직원과 직접 마주치는 것을 원치 않는 2030 세대의 소비 성향과 유통사의 인건비 절감 요구가 맞아떨어진 결과, 언택트 소비 패턴은 점차 확장되어 왔다. <br>
+* 동시에 직원과 직접 마주치는 것을 원치 않는 2030 세대의 소비 성향과 유통사의 인건비 절감 요구가 맞아떨어진 결과, 언택트 소비 패턴은 점차 확장되어 왔다. <br>
 
-이러한 배경 속에서 사람 · 현금 없이 운영되는 언택트 매장이 코로나 19 영향으로 더욱 주목받고 있다. <br>
+* 이러한 배경 속에서 사람 · 현금 없이 운영되는 언택트 매장이 코로나 19 영향으로 더욱 주목받고 있다. <br>
 
-코로나 19 여파로 집콕 수요가 늘어남에 따라 올해 3분기 온라인 쇼핑 거래액이 통계 이래 최고 금액 수준을 기록했다는 연구 결과가 한국 통계청에서 제공되었다. <br>
+* 코로나 19 여파로 집콕 수요가 늘어남에 따라 올해 3분기 온라인 쇼핑 거래액이 통계 이래 최고 금액 수준을 기록했다는 연구 결과가 한국 통계청에서 제공되었다. <br>
 
-동시에 안전한 환경에서 직접 물건을 맨눈으로 직접 확인한 후에 구매하려는 소비자들의 수요가 더욱 증가하였고, <br>
+* 동시에 안전한 환경에서 직접 물건을 맨눈으로 직접 확인한 후에 구매하려는 소비자들의 수요가 더욱 증가하였고, <br>
 
-이에 무인 상점 시스템과 더불어 ‘얼굴 인식 기반 체크인/체크아웃 시스템’을 구현하여 문제 해결에 도전해보고자 하였다.  <br><br>
+* 이에 무인 상점 시스템과 더불어 ‘얼굴 인식 기반 체크인/체크아웃 시스템’을 구현하여 문제 해결에 도전해보고자 하였다.  <br><br>
 
-In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning.<br>
+* In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning.<br>
 
-So-called generation 2030 has shown unique consumption pattern. <br>
+* So-called generation 2030 has shown unique consumption pattern. <br>
 
-From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br>
+* From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br>
 
-This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br>
+* This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br>
 
-In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br> 
+* In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br> 
 
-According to data provided by NSO(National Statistical Office) in South Korea, as the effect of pendamic, online shopping transactions in the third quarter of 2020 have reached the highest level ever since.<br>
+* According to data provided by NSO(National Statistical Office) in South Korea, as the effect of pendamic, online shopping transactions in the third quarter of 2020 have reached the highest level ever since.<br>
 
-On the other hand, the demand for safe environment for those customers who would prefer to purchase products (especially fresh products or expensive goods) after checking them physically.<br> 
+* On the other hand, the demand for safe environment for those customers who would prefer to purchase products (especially fresh products or expensive goods) after checking them physically.<br> 
 
-Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the contactless store system.<br>
+* Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the contactless store system.<br>
 
 
 # 🏃 산업 동향 (Industrial Trends)
-최근 인공지능 기술을 이용한 얼굴 인식의 정확도가 높아짐에 따라 범죄, 보안, 유통, 금융 등 다양한 분야에서 적용 사례가 증가되고 있다.<br>
+* 최근 인공지능 기술을 이용한 얼굴 인식의 정확도가 높아짐에 따라 범죄, 보안, 유통, 금융 등 다양한 분야에서 적용 사례가 증가되고 있다.<br>
 
-특히 생체인식 기술 중에서 얼굴 인식은 인식 장비와 접촉하지 않아 위생적이고 편의성이 높아 다양한 분야에서의 활용성이 기대된.<br>
+* 특히 생체인식 기술 중에서 얼굴 인식은 인식 장비와 접촉하지 않아 위생적이고 편의성이 높아 다양한 분야에서의 활용성이 기대된.<br>
 
-글로벌 얼굴인식 시장은 연평균 22%의 성장률을 보여 성장 전망도 매우 긍정적이다.<br><br>
+* 글로벌 얼굴인식 시장은 연평균 22%의 성장률을 보여 성장 전망도 매우 긍정적이다.<br><br>
 
-Recently, More the accuracy of deep learning based facial recognition technology, more the application examples of this tech in various fields such as crime, security, distribution and finance. <br>
+* Recently, More the accuracy of deep learning based facial recognition technology, more the application examples of this tech in various fields such as crime, security, distribution and finance. <br>
 
-It does not require any physical contact to any equipment. <br>
+* It does not require any physical contact to any equipment. <br>
 
-Among biometric recognition technologies, face recognition system is expected to be highly hygienic with a high convenience. <br>
+* Among biometric recognition technologies, face recognition system is expected to be highly hygienic with a high convenience. <br>
 
-Also the global facial recognition market is growing at an annual average of 22%, so the outlook for growth is fairly positive.
+* Also the global facial recognition market is growing at an annual average of 22%, so the outlook for growth is fairly positive.
 
 # 👨🏻‍🔬 개발 과제 (Research aims)
 
