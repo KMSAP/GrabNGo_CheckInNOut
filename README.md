@@ -1,12 +1,12 @@
 # ❓ 문제 인식 (Problem Definition)
-In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning. <br> <br>
-So-called generation 2030 has shown unique consumption pattern. <br> <br>
-From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br> <br>
-This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br> <br>
-In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br> <br>
-According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.<br> <br>
-At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.<br> <br>
-Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.<br> <br>
+In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning. <br>
+So-called generation 2030 has shown unique consumption pattern. <br>
+From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br>
+This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br>
+In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br>
+According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.<br>
+At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.<br>
+Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.<br>
 <br> <br>
 2020년 2월, 코로나 19가 급격히 확산되면서 코로나 19 이후의 뉴노멀과 함께 ‘언택트 사회’ 라는 새로운 변화가 소매, 유통, 원격 학습 등의 분야로 빠르게 확산됨. <br> <br>
 동시에 직원과 직접 마주치는 것을 원치 않는 2030 세대의 소비 성향과 유통사의 인건비 절감 요구가 맞아떨어진 결과, 점차 확장되어온 언택트 소비 패턴. <br> <br>
