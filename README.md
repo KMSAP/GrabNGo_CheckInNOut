@@ -19,7 +19,7 @@
 다양한 센서와 다량의 카메라를 사용하는 아마존고의 기술을 오직 카메라 한 대와 최신 컴퓨터 비전 알고리즘 만으로 단기간 내 구현 및 최적화에 도전.
 
 # 📝 레퍼런스 (Reference)
-* GitHub <br>
+* <b> GitHub </b><br>
 Yolov4 https://github.com/Tianxiaomo/pytorch-YOLOv4 <br>
 Yolov5 https://github.com/ultralytics/yolov5 <br>
 DeepSort https://github.com/mikel-brostrom/Yolov5_DeepSort_Pytorch <br>
@@ -28,7 +28,7 @@ Darknet https://github.com/pjreddie/darknet.git <br>
 LabelImg https://github.com/tzutalin/labelImg <br>
 FaceRecognition https://github.com/ageitgey/face_recognition <br>
 FaceNet https://github.com/timesler/facenet-pytorch <br>
-* Official Papers <br>
+* <b>Official Papers</b> <br>
 Yolov4 https://arxiv.org/pdf/2004.10934.pdf <br>
 Yolov5  -  On the way! <br>
 FaceRecognition https://arxiv.org/pdf/1804.06655.pdf <br>
