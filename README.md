@@ -72,5 +72,5 @@ FaceRecognition https://arxiv.org/pdf/1804.06655.pdf <br>
 FaceNet https://arxiv.org/pdf/1503.03832.pdf <br>
 Face Augmentation https://arxiv.org/pdf/1904.11685.pdf <br>
 Joint Face Detection and Alignment https://arxiv.org/pdf/1604.02878.pdf
-* <b>Pretrained Model</b> <br>
+* <b>Pretrained Model for FaceNet</b> <br>
 https://drive.google.com/file/d/0B5MzpY9kBtDVZ2RpVDYwWmxoSUk/edit
