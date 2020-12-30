@@ -55,15 +55,6 @@
 * 다양한 센서와 다량의 카메라를 사용하는 아마존고의 기술을 오직 카메라 한 대와 최신 컴퓨터 비전 알고리즘만으로 단기간 내 구현 및 최적화에 도전.<br><br>
 
 
-* Through the development of contactless store platform based on computer vision and deep learning, 
-Replace the consumption patterns that were previously made face-to-face are replaced with simple and fast non-face-to-face automation systems.
-
-* Make it possible to check the products in the virtual shopping cart with the app in real time by automatically mapping the customer's payment method and information through linkage with the database.
-
-* By omitting the payment step that was performed face-to-face, it is essential to reduce contact between people and shorten time.
-
-* We challenge the implementation and optimization of Amazon Go's technology using various sensors and a large number of cameras in a short period of time with only one camera and the latest computer vision algorithms.
-
 # 📝 레퍼런스 (Reference)
 * <b> GitHub </b><br>
 Yolov4 https://github.com/Tianxiaomo/pytorch-YOLOv4 <br>
