@@ -22,9 +22,9 @@ This tendency plus the demand for labor cost reduction of distributors have acce
 
 In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br> 
 
-According to data provided by NSO(National Statistical Office) in South Korea, as the effect of pendamic, online shopping transactions in the third quarter of 2020 have reached the highest level since ever been counted.<br>
+According to data provided by NSO(National Statistical Office) in South Korea, as the effect of pendamic, online shopping transactions in the third quarter of 2020 have reached the highest level ever since.<br>
 
-At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.<br> 
+On the other hand, the demand for safe environment for those customers who would prefer to purchase products (especially fresh products or expensive goods) after checking them physically.<br> 
 
 Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.<br>
 
