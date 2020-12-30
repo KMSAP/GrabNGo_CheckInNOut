@@ -6,12 +6,13 @@
 코로나 19 여파로 집콕 수요가 늘어남에 따라 올해 3분기 온라인 쇼핑 거래액이 통계 이래 최고 금액 수준을 기록했다는 연구 결과. <br> <br>
 동시에 안전한 환경에서 직접 물건을 맨눈으로 직접 확인한 후에 구매하려는 소비자들의 수요 증가. <br> <br>
 이에 무인 상점 시스템과 더불어 ‘얼굴 인식 기반 체크인/체크아웃 시스템’을 구현하여 문제 해결에 도전해보고자 함.  <br> <br>
-In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning. <br>
+In February 2020, with the rapid spread of Covid-19, a new form of society called ‘Contact-free society’, has penatrated almost every fields such as retail, distribution, or remote learning.<br> <br>
 So-called generation 2030 has shown unique consumption pattern. <br>
-From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br>
-This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br>
-In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br>
-According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.<br>
+From before the pendemic, many people in this group has been reluctant to shop while directly meeting other individuals. <br> <br>
+This tendency plus the demand for labor cost reduction of distributors have accelerated the expansion of the 'contact-free consumption pattern'. <br> <br>
+In such background, the concept of 'contact-free stores' that automatically operates has been in the spotlight. <br> <br>
+According to data provided by NSO(National Statistical Office) in South Korea, as the effect of pendamic, online shopping transactions in the third quarter of 2020 have reached the highest level since ever been counted.<br> <br>
+
 At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.<br>
 Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.<br>
 
