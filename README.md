@@ -34,7 +34,13 @@ Therefore, we will try to solve the problem by implementing a “face recognitio
 
 특히 생체인식 기술 중에서 얼굴 인식은 인식 장비와 접촉하지 않아 위생적이고 편의성이 높아 다양한 분야에서의 활용성이 기대됨.<br>
 
-글로벌 얼굴인식 시장은 연평균 22%의 성장률을 보여 성장 전망도 매우 긍정적.<br>
+글로벌 얼굴인식 시장은 연평균 22%의 성장률을 보여 성장 전망도 매우 긍정적.<br><br>
+
+Recently, More the accuracy of deep learning based facial recognition technology, more the application examples of this tech in various fields such as crime, security, distribution and finance. <br>
+
+Among biometric recognition technologies, face recognition is expected to be the most useful in almost every fields due to its hygienic and high convenience because it does not contact recognition equipment.
+
+The global facial recognition market is growing at an annual average of 22%, so the outlook for growth is very positive.
 
 # 👨🏻‍🔬 개발 필요성 (Research Background)
 컴퓨터 비전과 딥러닝 기반의 무인화 상점 플랫폼 개발을 통해 기존에 대면으로 이루어지던 소비 패턴을 간편하고 빠른 자동화 시스템으로 대체.<br
