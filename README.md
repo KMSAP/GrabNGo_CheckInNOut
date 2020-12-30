@@ -45,7 +45,7 @@ Among biometric recognition technologies, face recognition system is expected to
 Also the global facial recognition market is growing at an annual average of 22%, so the outlook for growth is fairly positive.
 
 # 👨🏻‍🔬 개발 필요성 (Research Background)
-컴퓨터 비전과 딥러닝 기반의 무인화 상점 플랫폼 개발을 통해 기존에 대면으로 이루어지던 소비 패턴을 간편하고 빠른 자동화 시스템으로 대체.<br
+컴퓨터 비전과 딥러닝 기반의 무인화 상점 플랫폼 개발을 통해 기존에 대면으로 이루어지던 소비 패턴을 간편하고 빠른 자동화 시스템으로 대체.<br>
 
 데이터베이스와의 연동을 통해 고객의 결제 방법과 정보 자동 매핑,<br>
 
