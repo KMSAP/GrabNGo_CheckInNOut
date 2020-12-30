@@ -34,7 +34,7 @@
 
 * 특히 생체인식 기술 중에서 얼굴 인식은 인식 장비와 접촉하지 않아 위생적이고 편의성이 높아 다양한 분야에서의 활용성이 기대된다.<br>
 
-* 글로벌 얼굴인식 시장은 연평균 22%의 성장률을 보여 성장 전망 또한 매우 긍정적이다.<br><br>
+* 글로벌 얼굴인식 시장이 연평균 22%의 성장률을 보여 성장 전망 또한 매우 긍정적이다.<br><br>
 
 * Recently, More the accuracy of deep learning based facial recognition technology, more the application examples of this tech in various fields such as crime, security, distribution and finance. <br>
 
