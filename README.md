@@ -29,5 +29,5 @@
 오직 카메라 한 대와 최신 컴퓨터 비전 알고리즘 만으로 단기간내 구현 및 최적화에 도전.
 
 #Reference
-https://arxiv.org/pdf/1503.03832.pdf
+https://arxiv.org/pdf/1503.03832.pdf <br>
 https://github.com/timesler/facenet-pytorch
