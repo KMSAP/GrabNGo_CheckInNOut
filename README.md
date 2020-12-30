@@ -4,7 +4,8 @@ At the same time, as a result of the 2030 generation's tendency to not want to m
 Untact stores that operate without people or cash are receiving more attention due to the impact of Covid-19. <br>
 According to the increase in demand for Zipcock in the aftermath of Corona 19, online shopping transactions in the third quarter of this year reached the highest level since statistics.
 At the same time, increasing demand from consumers who want to purchase products after checking them with the naked eye in a safe environment.
-Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system. <
+Therefore, we will try to solve the problem by implementing a “face recognition-based check-in/check-out system” along with the unmanned store system.
+<br> <br>
 2020년 2월, 코로나 19가 급격히 확산되면서 코로나 19 이후의 뉴노멀과 함께 ‘언택트 사회’ 라는 새로운 변화가 소매, 유통, 원격 학습 등의 분야로 빠르게 확산됨. <br>
 동시에 직원과 직접 마주치는 것을 원치 않는 2030 세대의 소비 성향과 유통사의 인건비 절감 요구가 맞아떨어진 결과, 점차 확장되어온 언택트 소비 패턴. <br>
 사람 · 현금 없이 운영되는 언택트 매장이 코로나 19 영향으로 더욱 주목받고 있음. <br>
