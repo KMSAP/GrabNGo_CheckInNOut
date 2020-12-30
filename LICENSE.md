@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2020 MinsuKimhero
+Copyright (c) 2020 Grab_N_Go
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
