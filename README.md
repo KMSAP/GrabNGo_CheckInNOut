@@ -54,6 +54,14 @@
 
 * 다양한 센서와 다량의 카메라를 사용하는 기존의 언택트 스토어 기술을 카메라 한 대와 최신 컴퓨터 비전 알고리즘만으로 단기간 내 구현 및 최적화에 도전.<br><br>
 
+# 👀 동작 미리보기 (Demo)
+<img src="https://user-images.githubusercontent.com/67300266/103402386-5518e200-4b90-11eb-933e-40f4bad09cc3.png" width="400" height="250"><br>
+<img src="https://user-images.githubusercontent.com/67300266/103402396-5a762c80-4b90-11eb-9521-89b39a3b3eb4.png" width="400" height="250"><br>
+<b>figure 1) </b> 체크인: 얼굴 인식 알고리즘 응용한 언택트 체크인 화면 예시. <br>
+<b>figure 2) </b> 체크아웃: 얼굴 인식 후 고객의 버추얼 카트 정보 매핑, 자동 결제 화면 예시. <br>
+
+
+
 # 📝 레퍼런스 (Reference)
 * <b> GitHub </b><br>
 Yolov4 https://github.com/Tianxiaomo/pytorch-YOLOv4 <br>
