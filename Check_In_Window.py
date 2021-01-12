@@ -3,35 +3,25 @@ from PyQt5.QtGui import QImage, QPixmap
 from PyQt5.uic import loadUi
 from PyQt5.QtCore import pyqtSlot, QTimer, QDate,Qt
 from PyQt5.QtWidgets import QDialog, QMessageBox, QApplication,QMainWindow
-import cv2
-import numpy as np
 import os
 from db_connection import DB_Connection
 import numpy as np
 from Face_Recognition import pre_trained_facenet
-import face_recognition
 import cv2
-# from mtcnn.mtcnn import MTCNN
 from facenet_pytorch import MTCNN
-import xlrd
 import tensorflow.compat.v1 as tf
 import time
 
 class Check_In_Window(QMainWindow):
     def __init__(self):
         super(Check_In_Window, self).__init__()
-        loadUi("/home/bit/PycharmProjects/GrabNGOCheckIn&Out/Check_In_Window.ui", self)
-        # self.detector = MTCNN()
+        loadUi("Check_In_Window.ui", self)
         self.mtcnn = MTCNN(select_largest=True, device='cuda')
         # some constants kept as default from facenet
-        minsize = 20
-        threshold = [0.6, 0.7, 0.7]
-        factor = 0.709
-        margin = 44
         self.input_image_size = 160
 
         self.sess = tf.compat.v1.Session(config=tf.compat.v1.ConfigProto(log_device_placement=True))
-        pre_trained_facenet.load_model('/home/bit/PycharmProjects/GrabNGOCheckIn&Out/model/20170512-110547.pb')
+        pre_trained_facenet.load_model('model/20170512-110547.pb')
         self.images_placeholder = tf.get_default_graph().get_tensor_by_name("input:0")
         self.embeddings = tf.get_default_graph().get_tensor_by_name("embeddings:0")
         self.phase_train_placeholder = tf.get_default_graph().get_tensor_by_name("phase_train:0")
@@ -55,9 +45,10 @@ class Check_In_Window(QMainWindow):
         # known face encoding and known face name list
         self.images = []
         self.class_names = []
-        self.boxes = []
+        self.faces = []
 
         attendance_list = os.listdir(path)
+        self.attendance_num = len(attendance_list)
         for cl in attendance_list:
             cur_img = cv2.imread(f'{path}/{cl}')
             print(cur_img)
@@ -68,13 +59,15 @@ class Check_In_Window(QMainWindow):
             start = time.time()
             # result = self.detector.detect_faces(cur_img)
             box = self.mtcnn.detect(cur_img,True)
+
             faces_detected += len(box)
             print(box)
             print(
                 f'Frames per second: {(time.time() - start):.3f},',
                 f'faces detected: {faces_detected}\r'
             )
-            self.boxes.append(box)
+            face = self.getFace(cur_img, box)
+            self.faces.append(face)
             self.class_names.append(os.path.splitext(cl)[0])
 
         self.timer.timeout.connect(self.update_frame)  # Connect timeout to the output function
@@ -96,11 +89,10 @@ class Check_In_Window(QMainWindow):
         else:
             print('heeeeeeeeeeeeeeeeeeeeeeee')
             print(box)
-            print(len(self.images),len(self.boxes),len(self.class_names))
-            for i, b, c in zip(self.images,self.boxes,self.class_names):
+            print(len(self.images),len(self.faces),len(self.class_names))
+            for f, c in zip(self.faces,self.class_names):
                 print('for loop')
-                print(b)
-                distance = self.compare2face(i, frame, b, box)
+                distance = self.compare2face(f, frame, box)
                 print('여기까진?')
                 threshold = 0.7  # set yourself to meet your requirement
                 print("distance = " + str(distance),' 사진번호: ', c)
@@ -122,22 +114,52 @@ class Check_In_Window(QMainWindow):
             print(name)
             self.logIn(name)
 
+
     def logIn(self, name):
         customer_id = int(name)
         DB = DB_Connection()
         cnt = DB.select_user(customer_id)
 
         if cnt[0] == "False":
-            greeting = cnt[1] + '님이 입장하셨습니다.'
+            greeting = ' Welcome, ' + cnt[1] + '.'
             print(name, '님이 입장하셨습니다.')
             DB.update_login_session_T(customer_id)
+            DB.insert_check_In_Time(customer_id)
 
             self.GreetingLabel.setText(greeting)
+            self.timer1 = QTimer(self)
+            self.timer1.start(5000)
+
+            self.timer1.timeout.connect(self.clearLabel)
+
+    def clearLabel(self):
+        self.GreetingLabel.clear()
 
     def update_frame(self):
+        path = '/home/ftpuser/ftp/files/'
+        new_attendance_list = os.listdir(path)
+        image_num = len(new_attendance_list)
         ret, image = self.capture.read()
-        # print(image)
-        self.displayImage(image)
+        if image_num == self.attendance_num:
+            self.displayImage(image)
+        else:
+            for cl in new_attendance_list:
+                if os.path.splitext(cl)[0] not in self.class_names:
+                    cur_img = cv2.imread(f'{path}/{cl}')
+                    faces_detected = 0
+                    start = time.time()
+                    # result = self.detector.detect_faces(cur_img)
+                    box = self.mtcnn.detect(cur_img, True)
+                    faces_detected += len(box)
+                    print(
+                        f'Frames per second: {(time.time() - start):.3f},',
+                        f'faces detected: {faces_detected}\r'
+                    )
+                    face = self.getFace(cur_img, box)
+                    self.faces.append(face)
+                    self.class_names.append(os.path.splitext(cl)[0])
+            self.displayImage(image)
+
 
     def displayImage(self, image, window=1):
         """
@@ -147,12 +169,12 @@ class Check_In_Window(QMainWindow):
         :param window: number of window
         :return:
         """
-        # print(image.shape)
+        print(image.shape)
         try:
             image = self.face_rec_(image)
         except Exception as e:
             print('뭐지?',e)
-        # image = cv2.resize(image, (640, 480))
+        image = cv2.resize(image, (640, 480))
         qformat = QImage.Format_Indexed8
         if len(image.shape) == 3:
             if image.shape[2] == 4:
@@ -168,28 +190,16 @@ class Check_In_Window(QMainWindow):
 
     def getFace(self, img, box):
         faces = []
-        # print(box)
         box = box[0][0]
-        # print(box)
         box = np.int32(box)
         # Result is an array with all the bounding boxes detected. We know that for 'ivan.jpg' there is only one.
-        # bounding_box = result
-        # keypoints = result[0]['keypoints']
         cv2.rectangle(img,
                       (box[0], box[1]), (box[2], box[3]),
                       (0, 155, 255),
                       2)
-        # cv2.circle(img, (keypoints['left_eye']), 2, (0, 155, 255), 2)
-        # cv2.circle(img, (keypoints['right_eye']), 2, (0, 155, 255), 2)
-        # cv2.circle(img, (keypoints['nose']), 2, (0, 155, 255), 2)
-        # cv2.circle(img, (keypoints['mouth_left']), 2, (0, 155, 255), 2)
-        # cv2.circle(img, (keypoints['mouth_right']), 2, (0, 155, 255), 2)
-        # cv2.imwrite("/home/bit/PycharmProjects/GrabNGOCheckIn&Out/Webcam-based-Face-Recognition-using-Deep-Learning-/Face_Recognition/check/dd_drawn.jpg", img)
         cropped = img[box[1]:box[3],
                   box[0]:box[2]]
-        # cv2.imwrite("/home/bit/PycharmProjects/GrabNGOCheckIn&Out/Webcam-based-Face-Recognition-using-Deep-Learning-/Face_Recognition/check/dd_cropped.jpg", cropped)
         rearranged = cv2.resize(cropped, (self.input_image_size, self.input_image_size), interpolation=cv2.INTER_CUBIC)
-        # cv2.imwrite("/home/bit/PycharmProjects/GrabNGOCheckIn&Out/Webcam-based-Face-Recognition-using-Deep-Learning-/Face_Recognition/check/dd_resized.jpg", rearranged)
         prewhitened = pre_trained_facenet.prewhiten(rearranged)
         faces.append({'face': rearranged, 'embedding': self.getEmbedding(prewhitened)})
         return faces
@@ -200,18 +210,12 @@ class Check_In_Window(QMainWindow):
         embedding = self.sess.run(self.embeddings, feed_dict=feed_dict)
         return embedding
 
-    def compare2face(self, img1, img2, box1,  box2):
-        face1 = self.getFace(img1,box1)
+    def compare2face(self, face, img2,  box2):
+        face1 = face
         print('여기')
         face2 = self.getFace(img2,box2)
-        # cv2.imwrite('image1.jpg', img2)
         print('여기2')
         if face1 and face2:
-            # print('face1',face1)
-            # print('face2',face2)
-            # print(len(face1[2]))
-            # print(len(face2[0]))
-            # calculate Euclidean distance
             dist = np.sqrt(np.sum(np.square(np.subtract(face1[0]['embedding'], face2[0]['embedding']))))
             return dist
         return -1
