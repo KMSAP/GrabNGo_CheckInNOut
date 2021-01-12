@@ -48,6 +48,16 @@ class DB_Connection():
             self.cursor.execute("""insert into order_details (order_detail_id, order_id, product_id, cart_in, ordered_price, cart_stock)
                                 values(order_details_seq.nextval, order_seq.currval, :product_id, :cart_in, :ordered_price, :cart_stock)"""
                            , {"product_id": row[1], "cart_in": row[2], "ordered_price": row[4], "cart_stock": row[5]})
+            
+            # 상품목록에서 수량 감소
+            self.cursor.execute("select product_stock from products where product_id = :product_id", {"product_id": row[1]})
+            cnt = self.cursor.fetchone()
+            print('product_stock1', cnt[0])
+            upd_stock = cnt[0] - row[5]
+            print('upd_stock',upd_stock)
+            self.cursor.execute("update products set product_stock = :upd_stock where product_id = :product_id",
+                                {"upd_stock":upd_stock, "product_id": row[1]})
+            print('cursor',self.cursor)
 
     def delete_cart(self, customer_id):
         self.cursor.execute("""delete carts where customer_id = :id"""
